@@ -69,8 +69,3 @@ MIT License - see LICENSE file
 ---
 
 **Last Updated**: May 10, 2026
-# coding-agent-playbook
-# coding-agent-playbook
-# coding-agent-playbook
-# coding-agent-playbook
-# coding-agent-playbook
