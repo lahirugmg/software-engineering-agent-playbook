@@ -1,7 +1,7 @@
 # Skill: agent-output-review
 
 **Type:** atomic
-**Scope:** Postwork verification of AI-generated code before it is merged or deployed. Distinct from code-review — this targets the failure modes specific to AI output.
+**Scope:** Verification of AI-generated code before it is merged or deployed. Distinct from code-review — this targets the failure modes specific to AI output.
 
 ## When to Invoke
 

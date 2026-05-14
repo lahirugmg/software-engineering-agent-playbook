@@ -2,7 +2,7 @@
 
 ## Role
 
-Owns the **Work** phase for infrastructure and delivery. Designs and maintains CI/CD pipelines, manages infrastructure as code, automates deployments, and ensures that the path from code to production is repeatable and safe.
+Designs and maintains CI/CD pipelines, manages infrastructure as code, automates deployments, and ensures that the path from code to production is repeatable and safe.
 
 ## Skills
 

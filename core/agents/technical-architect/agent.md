@@ -2,7 +2,7 @@
 
 ## Role
 
-Owns the **Prework** phase for technical decisions. Designs systems, documents architectural choices, writes technical specs, and ensures that what gets built is buildable — before implementation begins.
+Designs systems, documents architectural choices, writes technical specs, and ensures that what gets built is buildable — before implementation begins.
 
 ## Skills
 

@@ -4,8 +4,6 @@ A library of **agents**, **skills**, and **guidelines** for AI software engineer
 
 The playbook covers the full software development lifecycle — from requirements and architecture through implementation, testing, security, deployment, operations, and documentation. Each SDLC stage has a dedicated agent with its own behavioral rules and skills, so no stage is a gap and no agent carries responsibility beyond its scope.
 
-As AI agents take over execution — writing code, generating tests, running pipelines — developer value concentrates at the flanks: the **prework** of discovery, problem framing, and decision-making, and the **postwork** of verifying agent output, owning outcomes, and building stakeholder trust. This playbook covers all three phases.
-
 ## Model
 
 Three layers:
@@ -20,32 +18,28 @@ Behavioral rules live inline in each agent's `agent.md`. Skills define what an a
 
 ![Three-layer architecture: Adapters import from Core, which contains Skills and Guidelines](docs/diagrams/architecture.png)
 
-## Phase Model
+## Agent Workflow
 
-Every agent's skills fall into one of three phases. Agents own the prework and postwork phases; AI handles execution.
+Phase logic applies inside an individual agent workflow, not as a human-versus-AI operating model. A typical agent workflow has three steps: prepare the work, execute the change, and verify the result.
 
-| Phase | Human or AI | What happens |
-|---|---|---|
-| **Prework** | Human | Discovery, problem framing, constraints, deciding what and why to build |
-| **Work** | AI agents | Implementation, test generation, code review, deployment |
-| **Postwork** | Human | Verifying agent output, owning outcomes, building stakeholder trust |
+For a software engineer, that usually means clarifying scope, writing a spec or test-first plan, implementing the change, and then running tests and reviewing the output before it is considered done.
 
-![Phase model: Prework flows to Work flows to Postwork](docs/diagrams/phase-model.png)
+![Agent workflow: Preparation leads to Execution leads to Verification](docs/diagrams/phase-model.png)
 
 ## Agents
 
 Eight agents cover the full software development lifecycle:
 
-| Agent | Phase emphasis | Skills |
-|---|---|---|
-| **Business Analyst** | Prework | requirements-gathering, user-story, prd-writing, process-analysis, roadmap, sprint-planning, estimation, innovation-discovery |
-| **Technical Architect** | Prework | system-design, architecture-review, adr-writing, technical-spec, feasibility-analysis |
-| **Software Engineer** | Work + Postwork | code-review, agent-output-review, debugging, refactoring, spec-writing, tech-debt, dependency-update, migration, intrapreneur-workflow |
-| **QA Engineer** | Postwork | test-planning, test-writing, bug-report, performance-testing, exploratory-testing |
-| **Security Engineer** | Postwork | security-audit, threat-modeling, vulnerability-assessment, dependency-vulnerability, compliance-review |
-| **DevOps Engineer** | Work | pipeline-design, deployment, infrastructure-as-code, containerization, build-optimization |
-| **SRE** | Postwork | observability, alerting, incident-response, post-mortem, capacity-planning, runbook, root-cause-analysis |
-| **Technical Writer** | Postwork | api-docs, user-guide, runbook-writing, onboarding-guide, changelog, stakeholder-trust |
+| Agent | Skills |
+|---|---|
+| **Business Analyst** | requirements-gathering, user-story, prd-writing, process-analysis, roadmap, sprint-planning, estimation, innovation-discovery |
+| **Technical Architect** | system-design, architecture-review, adr-writing, technical-spec, feasibility-analysis |
+| **Software Engineer** | code-review, agent-output-review, debugging, refactoring, spec-writing, tech-debt, dependency-update, migration, intrapreneur-workflow |
+| **QA Engineer** | test-planning, test-writing, bug-report, performance-testing, exploratory-testing |
+| **Security Engineer** | security-audit, threat-modeling, vulnerability-assessment, dependency-vulnerability, compliance-review |
+| **DevOps Engineer** | pipeline-design, deployment, infrastructure-as-code, containerization, build-optimization |
+| **SRE** | observability, alerting, incident-response, post-mortem, capacity-planning, runbook, root-cause-analysis |
+| **Technical Writer** | api-docs, user-guide, runbook-writing, onboarding-guide, changelog, stakeholder-trust |
 
 Together the eight agents span the full SDLC: requirements → architecture → implementation → testing → security → deployment → operations → documentation. Each agent's behavioral rules are defined inline in its `agent.md`. Available skills are declared in the agent's `SKILLS.md` — a QA Engineer has no awareness of deployment skills, and vice versa.
 
@@ -79,21 +73,6 @@ Adapters are thin by design — each one imports from `core/` using the tool's n
 No content lives in adapters. Updating a core skill or guideline is automatically reflected in all adapters that import it.
 
 ## Structure
-
-### Behavioral Sources
-
-One file per agent at the root — the human-readable, narrative form of each agent's behavioral principles. These are the authoring source; `core/agents/*/agent.md` embeds the same rules in machine-readable form for adapters to import. Both must be kept in sync when rules change.
-
-```
-business-analyst.md
-developer.md              ← software engineer
-technical-architect.md
-qa-engineer.md
-security-engineer.md
-devops-engineer.md
-sre.md
-technical-writer.md
-```
 
 ### Core
 
@@ -149,7 +128,7 @@ core/
       design-and-document.md    ← composite: system-design → adr-writing → technical-spec
     software-engineer/
       code-review.md
-      agent-output-review.md    ← postwork: verify AI-generated code
+      agent-output-review.md    ← atomic: verifies AI-generated code for drift, logic gaps, missing edge cases
       debugging.md
       refactoring.md
       spec-writing.md
@@ -194,7 +173,7 @@ core/
       runbook-writing.md
       onboarding-guide.md
       changelog.md
-      stakeholder-trust.md      ← postwork: communicate outcomes, build trust after agent work
+      stakeholder-trust.md      ← atomic: communicate outcomes and build trust with stakeholders
       document-release.md       ← composite: api-docs → changelog → stakeholder-trust
 
 adapters/
@@ -236,7 +215,7 @@ Short version:
 - **On-demand skills**: skills are invoked when needed, never always-loaded
 - **Composable**: atomic skills combine into composite skills without duplication
 - **Agent-scoped behavior**: each agent defines only the behavioral rules relevant to its role
-- **Full-phase coverage**: every workflow covers prework (discovery, framing), work (execution), and postwork (verification, accountability) — AI handles execution, humans own the flanks
+- **Full SDLC coverage**: every stage from requirements to documentation has a dedicated agent and skills
 
 ## Contributing
 

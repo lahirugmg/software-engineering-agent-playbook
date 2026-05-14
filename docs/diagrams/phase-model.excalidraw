@@ -4,7 +4,7 @@
   "source": "https://excalidraw.com",
   "elements": [
     {
-      "id": "prework-col",
+      "id": "prep-col",
       "type": "rectangle",
       "x": 14, "y": 10, "width": 248, "height": 220,
       "angle": 0, "strokeColor": "#fb923c", "backgroundColor": "#fff7ed",
@@ -14,7 +14,7 @@
       "isDeleted": false, "boundElements": null, "updated": 1700000000000, "link": null, "locked": false
     },
     {
-      "id": "prework-header",
+      "id": "prep-header",
       "type": "text",
       "x": 14, "y": 18, "width": 248, "height": 46,
       "angle": 0, "strokeColor": "#c2410c", "backgroundColor": "transparent",
@@ -22,12 +22,12 @@
       "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
       "roundness": null, "seed": 3002, "version": 1, "versionNonce": 3002,
       "isDeleted": false, "boundElements": null, "updated": 1700000000000, "link": null, "locked": false,
-      "text": "PREWORK\nHuman", "fontSize": 16, "fontFamily": 1,
+      "text": "PREPARATION\nAgent Workflow", "fontSize": 16, "fontFamily": 1,
       "textAlign": "center", "verticalAlign": "top",
-      "containerId": null, "originalText": "PREWORK\nHuman", "lineHeight": 1.4
+      "containerId": null, "originalText": "PREPARATION\nAgent Workflow", "lineHeight": 1.4
     },
     {
-      "id": "prework-line",
+      "id": "prep-line",
       "type": "line",
       "x": 28, "y": 64, "width": 220, "height": 0,
       "angle": 0, "strokeColor": "#fed7aa", "backgroundColor": "transparent",
@@ -38,7 +38,7 @@
       "points": [[0, 0], [220, 0]], "lastCommittedPoint": null
     },
     {
-      "id": "prework-content",
+      "id": "prep-content",
       "type": "text",
       "x": 28, "y": 74, "width": 220, "height": 100,
       "angle": 0, "strokeColor": "#7c2d12", "backgroundColor": "transparent",
@@ -46,9 +46,9 @@
       "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
       "roundness": null, "seed": 3004, "version": 1, "versionNonce": 3004,
       "isDeleted": false, "boundElements": null, "updated": 1700000000000, "link": null, "locked": false,
-      "text": "• Discovery\n• Problem framing\n• Define constraints\n• Decide what to build",
+      "text": "• Clarify scope\n• Write spec or TDD plan\n• Define constraints\n• Choose approach",
       "fontSize": 14, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
-      "containerId": null, "originalText": "• Discovery\n• Problem framing\n• Define constraints\n• Decide what to build", "lineHeight": 1.5
+      "containerId": null, "originalText": "• Clarify scope\n• Write spec or TDD plan\n• Define constraints\n• Choose approach", "lineHeight": 1.5
     },
     {
       "id": "work-col",
@@ -69,9 +69,9 @@
       "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
       "roundness": null, "seed": 3006, "version": 1, "versionNonce": 3006,
       "isDeleted": false, "boundElements": null, "updated": 1700000000000, "link": null, "locked": false,
-      "text": "WORK\nAI Agents", "fontSize": 16, "fontFamily": 1,
+      "text": "EXECUTION\nAgent Workflow", "fontSize": 16, "fontFamily": 1,
       "textAlign": "center", "verticalAlign": "top",
-      "containerId": null, "originalText": "WORK\nAI Agents", "lineHeight": 1.4
+      "containerId": null, "originalText": "EXECUTION\nAgent Workflow", "lineHeight": 1.4
     },
     {
       "id": "work-line",
@@ -93,12 +93,12 @@
       "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
       "roundness": null, "seed": 3008, "version": 1, "versionNonce": 3008,
       "isDeleted": false, "boundElements": null, "updated": 1700000000000, "link": null, "locked": false,
-      "text": "• Implementation\n• Test generation\n• Code review\n• CI/CD pipelines",
+      "text": "• Implementation\n• Change code paths\n• Add or update tests\n• Iterate on failures",
       "fontSize": 14, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
-      "containerId": null, "originalText": "• Implementation\n• Test generation\n• Code review\n• CI/CD pipelines", "lineHeight": 1.5
+      "containerId": null, "originalText": "• Implementation\n• Change code paths\n• Add or update tests\n• Iterate on failures", "lineHeight": 1.5
     },
     {
-      "id": "postwork-col",
+      "id": "verify-col",
       "type": "rectangle",
       "x": 538, "y": 10, "width": 248, "height": 220,
       "angle": 0, "strokeColor": "#4ade80", "backgroundColor": "#f0fdf4",
@@ -108,7 +108,7 @@
       "isDeleted": false, "boundElements": null, "updated": 1700000000000, "link": null, "locked": false
     },
     {
-      "id": "postwork-header",
+      "id": "verify-header",
       "type": "text",
       "x": 538, "y": 18, "width": 248, "height": 46,
       "angle": 0, "strokeColor": "#15803d", "backgroundColor": "transparent",
@@ -116,12 +116,12 @@
       "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
       "roundness": null, "seed": 3010, "version": 1, "versionNonce": 3010,
       "isDeleted": false, "boundElements": null, "updated": 1700000000000, "link": null, "locked": false,
-      "text": "POSTWORK\nHuman", "fontSize": 16, "fontFamily": 1,
+      "text": "VERIFICATION\nAgent Workflow", "fontSize": 16, "fontFamily": 1,
       "textAlign": "center", "verticalAlign": "top",
-      "containerId": null, "originalText": "POSTWORK\nHuman", "lineHeight": 1.4
+      "containerId": null, "originalText": "VERIFICATION\nAgent Workflow", "lineHeight": 1.4
     },
     {
-      "id": "postwork-line",
+      "id": "verify-line",
       "type": "line",
       "x": 552, "y": 64, "width": 220, "height": 0,
       "angle": 0, "strokeColor": "#bbf7d0", "backgroundColor": "transparent",
@@ -132,7 +132,7 @@
       "points": [[0, 0], [220, 0]], "lastCommittedPoint": null
     },
     {
-      "id": "postwork-content",
+      "id": "verify-content",
       "type": "text",
       "x": 552, "y": 74, "width": 220, "height": 100,
       "angle": 0, "strokeColor": "#14532d", "backgroundColor": "transparent",
@@ -140,9 +140,9 @@
       "roughness": 1, "opacity": 100, "groupIds": [], "frameId": null,
       "roundness": null, "seed": 3012, "version": 1, "versionNonce": 3012,
       "isDeleted": false, "boundElements": null, "updated": 1700000000000, "link": null, "locked": false,
-      "text": "• Verify agent output\n• Own outcomes\n• Build stakeholder trust\n• Communicate results",
+      "text": "• Run unit or integration tests\n• Review the diff\n• Check edge cases\n• Confirm readiness",
       "fontSize": 14, "fontFamily": 1, "textAlign": "left", "verticalAlign": "top",
-      "containerId": null, "originalText": "• Verify agent output\n• Own outcomes\n• Build stakeholder trust\n• Communicate results", "lineHeight": 1.5
+      "containerId": null, "originalText": "• Run unit or integration tests\n• Review the diff\n• Check edge cases\n• Confirm readiness", "lineHeight": 1.5
     },
     {
       "id": "arrow-1",

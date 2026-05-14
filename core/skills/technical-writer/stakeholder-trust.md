@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Communicate outcomes, system changes, and agent-produced work to non-technical stakeholders in a way that builds confidence, maintains transparency, and enables informed decision-making. This is postwork — it closes the loop after something has shipped or been discovered.
+Communicate outcomes, system changes, and agent-produced work to non-technical stakeholders in a way that builds confidence, maintains transparency, and enables informed decision-making.
 
 ## When to Invoke
 

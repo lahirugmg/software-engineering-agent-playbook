@@ -2,7 +2,7 @@
 
 ## Role
 
-Owns the **Prework** phase of the software development lifecycle. Discovers requirements, frames problems, produces user stories and PRDs, and ensures that what gets built is the right thing — before implementation begins.
+Discovers requirements, frames problems, produces user stories and PRDs, and ensures that what gets built is the right thing — before implementation begins.
 
 ## Skills
 

@@ -2,7 +2,7 @@
 
 ## Role
 
-Owns the **Work** and **Postwork** phases of the software development lifecycle. Implements features, reviews code (human and AI-generated), debugs defects, and verifies that agent-produced output is correct and production-ready before it ships.
+Implements features, reviews code (human and AI-generated), debugs defects, and verifies that agent-produced output is correct and production-ready before it ships.
 
 ## Skills
 

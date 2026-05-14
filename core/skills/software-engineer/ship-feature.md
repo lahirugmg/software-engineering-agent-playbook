@@ -5,7 +5,7 @@
 
 ## Purpose
 
-End-to-end workflow for delivering a feature: from an ambiguous requirement to merged, production-ready code. Owns the prework (spec), supervises AI execution (implementation), and closes with postwork (review and verification).
+End-to-end workflow for delivering a feature: from an ambiguous requirement to merged, production-ready code. Follows a preparation, execution, and verification loop using spec writing, implementation, and review.
 
 ## When to Invoke
 
@@ -14,7 +14,7 @@ End-to-end workflow for delivering a feature: from an ambiguous requirement to m
 
 ## Workflow
 
-### Step 1 — Spec (@spec-writing)
+### Step 1 — Preparation (@spec-writing)
 
 Before any code is written:
 
@@ -24,7 +24,7 @@ Before any code is written:
 
 **Gate:** Do not proceed to implementation until the spec has a defined scope and at least one open question is not blocking.
 
-### Step 2 — Implementation
+### Step 2 — Execution
 
 Hand the spec to an AI agent or implement directly:
 
@@ -42,7 +42,7 @@ Track implementation against the GIVEN/WHEN/THEN cases in the spec. Each case sh
 
 No code merges without passing this review. Blocking issues from the review go back to Step 2.
 
-### Step 4 — Verify
+### Step 4 — Verification
 
 Before marking the feature done:
 - [ ] All GIVEN/WHEN/THEN cases from the spec have passing tests.

@@ -2,7 +2,7 @@
 
 ## Role
 
-Owns the **Postwork** phase for reliability. Defines service level objectives, responds to incidents, eliminates toil, and ensures that systems are observable, operable, and improving over time.
+Defines service level objectives, responds to incidents, eliminates toil, and ensures that systems are observable, operable, and improving over time.
 
 ## Skills
 

@@ -1,41 +1,41 @@
-<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phase model: Prework (Human) leads to Work (AI Agents) leads to Postwork (Human)">
-  <title>Phase Model</title>
+<svg viewBox="0 0 800 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Agent workflow: Preparation leads to Execution leads to Verification">
+  <title>Agent Workflow</title>
 
-  <!-- ── PREWORK COLUMN ── -->
+  <!-- Preparation -->
   <rect x="14" y="10" width="248" height="220" rx="10" fill="#FFF7ED" stroke="#FB923C" stroke-width="2"/>
-  <text x="138" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#C2410C" letter-spacing="1">PREWORK</text>
-  <text x="138" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#EA580C">Human</text>
+  <text x="138" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#C2410C" letter-spacing="1">PREPARATION</text>
+  <text x="138" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#EA580C">Agent Workflow</text>
   <line x1="28" y1="64" x2="248" y2="64" stroke="#FED7AA" stroke-width="1"/>
-  <text x="36" y="86"  font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#7C2D12">• Discovery</text>
-  <text x="36" y="108" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#7C2D12">• Problem framing</text>
+  <text x="36" y="86"  font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#7C2D12">• Clarify scope</text>
+  <text x="36" y="108" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#7C2D12">• Write spec or TDD plan</text>
   <text x="36" y="130" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#7C2D12">• Define constraints</text>
-  <text x="36" y="152" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#7C2D12">• Decide what to build</text>
+  <text x="36" y="152" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#7C2D12">• Choose approach</text>
 
-  <!-- ── ARROW 1 ── -->
+  <!-- Arrow 1 -->
   <line x1="266" y1="120" x2="276" y2="120" stroke="#9CA3AF" stroke-width="2"/>
   <polygon points="282,120 274,115 274,125" fill="#9CA3AF"/>
 
-  <!-- ── WORK COLUMN ── -->
+  <!-- Execution -->
   <rect x="286" y="10" width="228" height="220" rx="10" fill="#EFF6FF" stroke="#60A5FA" stroke-width="2"/>
-  <text x="400" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#1D4ED8" letter-spacing="1">WORK</text>
-  <text x="400" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#2563EB">AI Agents</text>
+  <text x="400" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#1D4ED8" letter-spacing="1">EXECUTION</text>
+  <text x="400" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#2563EB">Agent Workflow</text>
   <line x1="300" y1="64" x2="500" y2="64" stroke="#BFDBFE" stroke-width="1"/>
   <text x="304" y="86"  font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#1E3A8A">• Implementation</text>
-  <text x="304" y="108" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#1E3A8A">• Test generation</text>
-  <text x="304" y="130" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#1E3A8A">• Code review</text>
-  <text x="304" y="152" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#1E3A8A">• CI/CD pipelines</text>
+  <text x="304" y="108" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#1E3A8A">• Change code paths</text>
+  <text x="304" y="130" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#1E3A8A">• Add or update tests</text>
+  <text x="304" y="152" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#1E3A8A">• Iterate on failures</text>
 
-  <!-- ── ARROW 2 ── -->
+  <!-- Arrow 2 -->
   <line x1="518" y1="120" x2="528" y2="120" stroke="#9CA3AF" stroke-width="2"/>
   <polygon points="534,120 526,115 526,125" fill="#9CA3AF"/>
 
-  <!-- ── POSTWORK COLUMN ── -->
+  <!-- Verification -->
   <rect x="538" y="10" width="248" height="220" rx="10" fill="#F0FDF4" stroke="#4ADE80" stroke-width="2"/>
-  <text x="662" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#15803D" letter-spacing="1">POSTWORK</text>
-  <text x="662" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#16A34A">Human</text>
+  <text x="662" y="36" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="14" font-weight="700" fill="#15803D" letter-spacing="1">VERIFICATION</text>
+  <text x="662" y="54" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" fill="#16A34A">Agent Workflow</text>
   <line x1="552" y1="64" x2="772" y2="64" stroke="#BBF7D0" stroke-width="1"/>
-  <text x="556" y="86"  font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#14532D">• Verify agent output</text>
-  <text x="556" y="108" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#14532D">• Own outcomes</text>
-  <text x="556" y="130" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#14532D">• Build stakeholder trust</text>
-  <text x="556" y="152" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#14532D">• Communicate results</text>
+  <text x="556" y="86"  font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#14532D">• Run unit or integration tests</text>
+  <text x="556" y="108" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#14532D">• Review the diff</text>
+  <text x="556" y="130" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#14532D">• Check edge cases</text>
+  <text x="556" y="152" font-family="system-ui,-apple-system,sans-serif" font-size="12" fill="#14532D">• Confirm readiness</text>
 </svg>

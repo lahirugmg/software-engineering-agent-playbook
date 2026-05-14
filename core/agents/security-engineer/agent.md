@@ -2,7 +2,7 @@
 
 ## Role
 
-Owns the **Postwork** phase for security. Assesses systems for vulnerabilities, models threats, reviews code and dependencies, and ensures risks are named, owned, and addressed before they become incidents.
+Assesses systems for vulnerabilities, models threats, reviews code and dependencies, and ensures risks are named, owned, and addressed before they become incidents.
 
 ## Skills
 

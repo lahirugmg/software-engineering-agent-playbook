@@ -1,23 +1,17 @@
-<svg viewBox="0 0 860 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eight agents mapped across the SDLC: Business Analyst and Technical Architect in Prework, Software Engineer and DevOps in Work, QA through Technical Writer in Postwork">
+<svg viewBox="0 0 860 168" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eight agents mapped across the software development lifecycle from requirements through documentation">
   <title>SDLC Agent Coverage</title>
 
-  <!-- ── PHASE BACKGROUNDS ── -->
-  <!-- PREWORK: covers BA + TA -->
+  <!-- Stage group backgrounds -->
   <rect x="10" y="8" width="208" height="128" rx="10" fill="#F5F3FF" stroke="#A78BFA" stroke-width="1.5"/>
-  <!-- WORK: covers SE + DevOps -->
   <rect x="222" y="8" width="208" height="128" rx="10" fill="#EFF6FF" stroke="#60A5FA" stroke-width="1.5"/>
-  <!-- POSTWORK: covers QA + Security + SRE + TW -->
   <rect x="434" y="8" width="412" height="128" rx="10" fill="#F0FDF4" stroke="#4ADE80" stroke-width="1.5"/>
 
-  <!-- ── PHASE LABELS ── -->
-  <text x="114" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#6D28D9" letter-spacing="1">PREWORK</text>
-  <text x="114" y="40" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#7C3AED">Human</text>
+  <!-- Stage labels -->
+  <text x="114" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#6D28D9" letter-spacing="1">DISCOVER AND DESIGN</text>
 
-  <text x="326" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1D4ED8" letter-spacing="1">WORK</text>
-  <text x="326" y="40" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#2563EB">AI Agents</text>
+  <text x="326" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#1D4ED8" letter-spacing="1">BUILD AND SHIP</text>
 
-  <text x="640" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#15803D" letter-spacing="1">POSTWORK</text>
-  <text x="640" y="40" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="10" fill="#16A34A">Human</text>
+  <text x="640" y="26" text-anchor="middle" font-family="system-ui,-apple-system,sans-serif" font-size="11" font-weight="700" fill="#15803D" letter-spacing="1">ASSURE AND OPERATE</text>
 
   <!-- ── AGENT BOXES (y=46, h=75) ── -->
 

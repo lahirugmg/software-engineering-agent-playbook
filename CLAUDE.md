@@ -23,7 +23,6 @@ When making changes, enforce these invariants:
 3. **Atomic skills have one responsibility.** If a skill file orchestrates other skills, it is composite and must say so explicitly.
 4. **`core/knowledge/` has two files only**: `development-best-practices.md` and `security-guidelines.md`. Do not add more without a strong reason — thin pointer files belong in the adapter's Knowledge Access section, not here.
 5. **Per-agent files must stay in sync.** If you add a skill, add it to `SKILLS.md`.
-6. **Root `.md` files and `core/agents/*/agent.md` are kept in sync.** Root files (`developer.md`, `business-analyst.md`, etc.) are human-readable sources. `agent.md` is the machine-readable form. Both must reflect the same behavioral rules.
 
 ## Structure
 
@@ -136,11 +135,9 @@ Body: `@core/agents/<agent>/agent.md` import, plus Skill Loading and Knowledge A
 2. Create `core/skills/<agent>/` directory and at minimum one skill file.
 3. Create `adapters/claude/<agent>.md` with YAML frontmatter and @-imports.
 4. Add the agent to the Agents table in `README.md`.
-5. Create a root-level `<agent>.md` (human-readable companion to `agent.md`).
 
 **Update a behavioral rule:**
 1. Edit `core/agents/<agent>/agent.md`.
-2. Edit the corresponding root-level `.md` file to match.
 
 **Add an MCP-backed tool option:**
 1. Add an entry to `adapters/claude/MCP.md` under the appropriate section.

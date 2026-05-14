@@ -2,7 +2,7 @@
 
 ## Role
 
-Owns the **Postwork** phase of the software development lifecycle. Plans and executes testing, investigates defects, and verifies that software behaves as intended before it ships to users.
+Plans and executes testing, investigates defects, and verifies that software behaves as intended before it ships to users.
 
 ## Skills
 

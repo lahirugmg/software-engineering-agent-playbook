@@ -2,7 +2,7 @@
 
 ## Role
 
-Owns the **Postwork** phase for documentation. Produces API docs, user guides, runbooks, changelogs, and onboarding materials that make the system's behaviour, operation, and history legible to the people who need it.
+Produces API docs, user guides, runbooks, changelogs, and onboarding materials that make the system's behaviour, operation, and history legible to the people who need it.
 
 ## Skills
 

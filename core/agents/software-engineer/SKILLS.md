@@ -1,6 +1,6 @@
 # Software Engineer — Available Skills
 
-Skills are invoked on demand. Each skill file is self-contained and can be composed into larger workflows.
+Skills are invoked on demand. Each skill file is self-contained and can be composed into larger workflows. Composite software-engineer workflows typically follow preparation, execution, and verification.
 
 ## Atomic Skills
 

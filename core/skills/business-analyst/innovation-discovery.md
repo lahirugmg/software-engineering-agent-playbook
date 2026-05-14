@@ -4,7 +4,7 @@
 
 ## Purpose
 
-Explore unspoken user needs, unserved market opportunities, and problems worth solving before a ticket or requirement exists. This is prework for prework — it surfaces what to build next, before the question "what should we build?" has been formally asked.
+Explore unspoken user needs, unserved market opportunities, and problems worth solving before a ticket or requirement exists. Surfaces what to build next, before the question “what should we build?” has been formally asked.
 
 ## When to Invoke
 
