@@ -6,6 +6,8 @@ Skills are invoked on demand. Each skill file is self-contained and can be compo
 
 | Skill | File | When to use |
 |---|---|---|
+| interview-me | @core/skills/business-analyst/interview-me.md | Extract what a stakeholder actually wants through one-question-at-a-time structured elicitation |
+| idea-refine | @core/skills/business-analyst/idea-refine.md | Turn a vague idea into a scoped proposal through divergent then convergent thinking |
 | innovation-discovery | @core/skills/business-analyst/innovation-discovery.md | Explore unspoken needs and opportunities before a ticket exists |
 | requirements-gathering | @core/skills/business-analyst/requirements-gathering.md | Extract and document requirements from stakeholders |
 | process-analysis | @core/skills/business-analyst/process-analysis.md | Map and analyse an existing business process to find gaps or improvements |

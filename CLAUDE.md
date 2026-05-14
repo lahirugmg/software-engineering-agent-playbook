@@ -141,6 +141,20 @@ Body: `@core/agents/<agent>/agent.md` import, plus Skill Loading and Knowledge A
 | requirements | README.md + open GitHub issues |
 | architecture | README.md, `adapters/claude/SPEC.md` |
 
+## Working on This Repository
+
+This repository includes the `agent-skills/` plugin (Addy Osmani's lifecycle-based skill pack). Use its slash commands when working on the playbook itself:
+
+| When doing this… | Use this |
+|---|---|
+| Adding a new agent or skill | `/spec` — write the spec before touching files |
+| Reorganising phase structure | `/plan` — break it into discrete tasks |
+| Reviewing new skill files before committing | `/review` — code-review-and-quality |
+| Making a non-obvious structural decision | `doubt-driven-development` — adversarial review before the decision stands |
+| Scoping a new role or skill category | `interview-me` / `idea-refine` |
+
+When enriching or adding skills to `core/`, use the agent-skills skill files as reference material — they are the upstream source for `incremental-implementation`, `code-simplification`, `source-driven-development`, `doubt-driven-development`, `interview-me`, `idea-refine`, `performance-optimization`, and `browser-testing`.
+
 ## Common Tasks
 
 **Add a new skill to an existing agent:**

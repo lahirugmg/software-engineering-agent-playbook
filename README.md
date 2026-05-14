@@ -32,10 +32,10 @@ All eight agents follow this pattern. The specific skills differ by role:
 
 | Agent | Pre-work | Execution | Post-work |
 |---|---|---|---|
-| **Business Analyst** | innovation-discovery, requirements-gathering, process-analysis | user-story, prd-writing, roadmap | estimation, sprint-planning |
+| **Business Analyst** | interview-me, idea-refine, innovation-discovery, requirements-gathering, process-analysis | user-story, prd-writing, roadmap | estimation, sprint-planning |
 | **Technical Architect** | feasibility-analysis | system-design, adr-writing, technical-spec | architecture-review |
-| **Software Engineer** | spec-writing, tech-debt | debugging, refactoring, migration, dependency-update | code-review, agent-output-review |
-| **QA Engineer** | test-planning | test-writing, performance-testing, exploratory-testing | bug-report |
+| **Software Engineer** | spec-writing, tech-debt | incremental-implementation, source-driven-development, debugging, refactoring, migration, dependency-update, performance-optimization | code-review, code-simplification, doubt-driven-development, agent-output-review |
+| **QA Engineer** | test-planning | test-writing, browser-testing, performance-testing, exploratory-testing | bug-report |
 | **Security Engineer** | threat-modeling | security-audit, vulnerability-assessment, dependency-vulnerability | compliance-review |
 | **DevOps Engineer** | pipeline-design, infrastructure-as-code | containerization, build-optimization | deployment |
 | **SRE** | observability, alerting, capacity-planning, runbook | incident-response, root-cause-analysis | post-mortem |
@@ -51,10 +51,10 @@ Eight agents cover the full software development lifecycle:
 
 | Agent | Composite Workflow | Pre-work | Execution | Post-work |
 |---|---|---|---|---|
-| **Business Analyst** | requirements-to-prd | innovation-discovery, requirements-gathering, process-analysis | user-story, prd-writing, roadmap | estimation, sprint-planning |
+| **Business Analyst** | requirements-to-prd | interview-me, idea-refine, innovation-discovery, requirements-gathering, process-analysis | user-story, prd-writing, roadmap | estimation, sprint-planning |
 | **Technical Architect** | design-and-document | feasibility-analysis | system-design, adr-writing, technical-spec | architecture-review |
-| **Software Engineer** | ship-feature, intrapreneur-workflow | spec-writing, tech-debt | debugging, refactoring, migration, dependency-update | code-review, agent-output-review |
-| **QA Engineer** | feature-validation | test-planning | test-writing, performance-testing, exploratory-testing | bug-report |
+| **Software Engineer** | ship-feature, intrapreneur-workflow | spec-writing, tech-debt | incremental-implementation, source-driven-development, debugging, refactoring, migration, dependency-update, performance-optimization | code-review, code-simplification, doubt-driven-development, agent-output-review |
+| **QA Engineer** | feature-validation | test-planning | test-writing, browser-testing, performance-testing, exploratory-testing | bug-report |
 | **Security Engineer** | security-review | threat-modeling | security-audit, vulnerability-assessment, dependency-vulnerability | compliance-review |
 | **DevOps Engineer** | ship-service | pipeline-design, infrastructure-as-code | containerization, build-optimization | deployment |
 | **SRE** | incident-to-action | observability, alerting, capacity-planning, runbook | incident-response, root-cause-analysis | post-mortem |
@@ -130,6 +130,8 @@ core/
 
   skills/
     business-analyst/
+      interview-me.md           ← atomic / pre-work: extract what a stakeholder actually wants through structured elicitation
+      idea-refine.md            ← atomic / pre-work: turn a vague idea into a scoped proposal through divergent/convergent thinking
       requirements-gathering.md
       user-story.md
       prd-writing.md
@@ -147,19 +149,25 @@ core/
       feasibility-analysis.md
       design-and-document.md    ← composite: system-design → adr-writing → technical-spec
     software-engineer/
-      code-review.md
-      agent-output-review.md    ← atomic: verifies AI-generated code for drift, logic gaps, missing edge cases
-      debugging.md
-      refactoring.md
       spec-writing.md
       tech-debt.md
-      dependency-update.md
+      incremental-implementation.md ← atomic / execution: build in thin vertical slices — implement, test, verify, commit per slice
+      source-driven-development.md  ← atomic / execution: ground framework decisions in official docs with citations
+      debugging.md
+      refactoring.md
       migration.md
-      ship-feature.md           ← composite: spec-writing → code-review → testing
-      intrapreneur-workflow.md  ← composite: discovery → spec → build → review → trust
+      dependency-update.md
+      performance-optimization.md   ← atomic / execution: identify and fix bottlenecks through measurement, not intuition
+      code-review.md
+      code-simplification.md        ← atomic / post-work: reduce complexity in working code while preserving exact behaviour
+      doubt-driven-development.md   ← atomic / post-work: adversarial review of non-trivial decisions before they stand
+      agent-output-review.md        ← atomic / post-work: verifies AI-generated code for drift, logic gaps, missing edge cases
+      ship-feature.md               ← composite: spec-writing → code-review → testing
+      intrapreneur-workflow.md      ← composite: discovery → spec → build → review → trust
     qa-engineer/
       test-planning.md
       test-writing.md
+      browser-testing.md        ← atomic / execution: test and debug web UI using live browser runtime data
       bug-report.md
       performance-testing.md
       exploratory-testing.md

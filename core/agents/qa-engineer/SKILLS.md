@@ -13,6 +13,7 @@ Skills are invoked on demand. Each skill file is self-contained and can be compo
 | Skill | File | When to use |
 |---|---|---|
 | test-writing | @core/skills/qa-engineer/test-writing.md | Write test cases or automated tests for a specific feature or code path |
+| browser-testing | @core/skills/qa-engineer/browser-testing.md | Test and debug web UI using live browser runtime data |
 | performance-testing | @core/skills/qa-engineer/performance-testing.md | Design and execute performance tests against a defined baseline and threshold |
 | exploratory-testing | @core/skills/qa-engineer/exploratory-testing.md | Run structured exploratory testing to find issues outside the specified scope |
 

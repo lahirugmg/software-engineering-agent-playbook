@@ -45,3 +45,33 @@
 - The fix (diff or changed files).
 - A test that confirms the fix and would catch a regression.
 - Any related risks or follow-up items uncovered during investigation.
+
+## Common Rationalizations
+
+| Rationalization | Reality |
+|---|---|
+| "I know what's wrong, I'll skip reproduction" | Without a reproduction, you can't confirm the fix. You may fix the wrong thing and declare success. |
+| "I'll fix it and add a test later" | Later rarely happens. The test is part of the fix — it proves the fix works and prevents recurrence. |
+| "It's an obvious fix, I don't need a hypothesis" | Debugging without a written hypothesis lets you drift from one change to the next. Write it down — even obvious ones. |
+| "The bug is in the code I just wrote" | It might be. But verify: the bug might be in code that was already broken, exposed by your change. |
+| "Refactoring this now will make the fix cleaner" | Separate the fix from the refactor. Mixed commits hide what actually fixed the bug and make rollbacks dangerous. |
+
+## Red Flags
+
+- Making code changes before reproducing the bug
+- "Fixed it" with no test proving the original case now passes
+- Root cause stated as "human error" — that's a symptom, not a cause
+- Fix touches more than the minimum required — likely scope creep or guessing
+- No explanation of why the fix works, only what changed
+- Original failing test or reproduction case deleted or commented out after fix
+
+## Verification
+
+Before closing the bug:
+
+- [ ] The bug was reproduced before any code was changed
+- [ ] A root cause is stated in writing — not just what was changed
+- [ ] The fix is surgical: changes only what is required to address the root cause
+- [ ] A test exists that failed before the fix and passes after
+- [ ] All pre-existing tests still pass
+- [ ] The commit message includes the root cause and why the fix is correct

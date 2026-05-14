@@ -51,3 +51,34 @@ A structured review with three sections:
 **Confirmed** — two or three things done well. Keeps the signal-to-noise ratio honest.
 
 If there are no blocking issues, say so explicitly.
+
+## Common Rationalizations
+
+| Rationalization | Reality |
+|---|---|
+| "It works, so it's fine" | Correctness is one axis. A review also checks maintainability, security, and test coverage — all of which can fail even when the feature works. |
+| "I'll approve with a comment" | Non-blocking comments on blocking issues let bad code merge. Classify honestly: if it must change, it's blocking. |
+| "Tests can come later" | Missing tests are a blocking concern. Code that ships without tests creates debt that almost never gets paid. |
+| "I don't want to seem harsh" | A review that avoids calling out real problems is not a review — it's approval theater. Specific, actionable feedback is respectful, not harsh. |
+| "The diff is too large to review properly" | Then say so. A review of a diff too large to understand is worse than no review — it provides false assurance. Request a split. |
+
+## Red Flags
+
+- Approving without reading every changed file
+- Commenting on style while missing a security vulnerability
+- Flagging the same category of issue once but not consistently (reviewer bias rather than systematic check)
+- Missing tests treated as non-blocking
+- PR description absent and reviewer didn't ask for one before reviewing
+- No "Confirmed" section — a review with only criticism misses the signal-to-noise calibration
+
+## Verification
+
+Before submitting a review:
+
+- [ ] PR description was read (or requested) before the diff was opened
+- [ ] Happy path traced end-to-end through the changed code
+- [ ] At least two edge cases explicitly considered
+- [ ] Security axes checked: input handling, auth, secrets, error messages
+- [ ] Every changed behaviour has a corresponding test — or a blocking comment is filed
+- [ ] Each blocking item has: file:line, what's wrong, why it matters, suggested fix
+- [ ] "Confirmed" section lists at least one thing done well

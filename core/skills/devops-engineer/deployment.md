@@ -55,3 +55,35 @@ Plan and execute a deployment to a target environment with a defined rollback pl
 - **Smoke test results** — pass/fail for each check
 - **Post-deploy metrics summary** — key metrics during the soak period
 - **Outcome declaration** — COMPLETE / ROLLED BACK / INVESTIGATING with rationale
+
+## Common Rationalizations
+
+| Rationalization | Reality |
+|---|---|
+| "The rollback plan is obvious, I don't need to write it down" | Under incident pressure, "obvious" plans fail. The rollback steps must be written before deploy, not recalled during one. |
+| "We can monitor it after the soak period" | Post-deploy monitoring must begin during the soak period. Anomalies caught at 5 minutes are cheaper than anomalies caught at 5 hours. |
+| "Smoke tests are enough verification" | Smoke tests confirm the service is alive. They don't confirm correct behavior. The soak period and metrics monitoring fill the gap. |
+| "We've deployed this before, no need for a checklist" | Familiarity breeds skipped steps. The checklist exists because the same team makes the same mistakes on familiar deployments. |
+| "I'll run the smoke tests manually, it's faster" | Manual smoke tests are not repeatable and not auditable. Automate them — then run them manually as a supplement if needed. |
+
+## Red Flags
+
+- Deploying without a documented rollback plan
+- Rollback plan that has never been tested in any environment
+- Declaring the deployment COMPLETE before the soak period ends
+- No defined rollback trigger — the team is guessing when to roll back
+- Smoke tests skipped because "the pipeline already tested this"
+- Leaving the deployment unmonitored during the soak period
+- Deploying a rebuilt artifact instead of promoting the pipeline-verified artifact
+
+## Verification
+
+Before declaring COMPLETE:
+
+- [ ] Pre-deploy checklist confirmed — same artifact promoted (not rebuilt)
+- [ ] Rollback plan documented and rollback trigger is specific and measurable
+- [ ] Deployment strategy chosen and matches the risk level of the change
+- [ ] Smoke tests ran against the production environment after deploy
+- [ ] Soak period ran to completion with metrics checked at start, midpoint, and end
+- [ ] Deployment log records what, when, and by whom with artifact reference
+- [ ] Outcome declaration is explicit: COMPLETE / ROLLED BACK / INVESTIGATING

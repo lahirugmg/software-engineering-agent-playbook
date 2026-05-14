@@ -54,3 +54,36 @@ Systematically review a system, codebase, or configuration for security vulnerab
 - **Findings** — each finding with location, description, severity, evidence, and remediation
 - **Summary table** — count of findings by severity
 - **Verdict** — Clear / Conditional (findings but not blocking) / Blocked (Critical findings)
+
+## Common Rationalizations
+
+| Rationalization | Reality |
+|---|---|
+| "There's no threat model, but I'll audit anyway" | An audit without a threat model applies generic checklists to an unknown risk profile. Run threat-modeling first. |
+| "We use a framework, so injection isn't possible" | Frameworks reduce risk; they don't eliminate it. Misconfiguration and custom query builders are common bypasses. |
+| "This is an internal service, no auth needed" | Internal services are compromised through lateral movement. Assume breach — treat internal callers as untrusted. |
+| "I checked OWASP Top 10, we're good" | OWASP covers common categories. It doesn't cover logic flaws, business rule violations, or system-specific risks. |
+| "No CVEs in npm audit means no dependency risk" | Audit tools only find known vulnerabilities. Supply-chain attacks, abandoned packages, and typosquatting are invisible to CVE scanners. |
+
+## Red Flags
+
+- Audit scope undefined before work begins — "review the whole system" produces shallow coverage
+- Findings without evidence (specific file, line, or configuration)
+- "Low" severity assigned to any finding with a realistic exploitation path
+- Secrets check skipped because "we use a secrets manager" — misconfiguration still leaks
+- Auth review that only covers login, not authorisation on individual operations
+- Verdict of "Clear" while open questions remain about un-audited components
+
+## Verification
+
+Before issuing a verdict:
+
+- [ ] Audit scope is documented — what was and was not reviewed
+- [ ] Threat model was read before the audit began
+- [ ] Every finding includes location, severity, evidence, and remediation
+- [ ] Input handling checked for every external input surface
+- [ ] Auth and authorisation checked for every protected operation
+- [ ] Secrets checked in code, logs, and environment loading
+- [ ] Dependencies checked against vulnerability advisories
+- [ ] Summary table count matches the number of documented findings
+- [ ] Verdict matches the highest-severity open finding
